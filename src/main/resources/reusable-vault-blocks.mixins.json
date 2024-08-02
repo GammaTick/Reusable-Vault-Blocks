@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.jurassicbeast.reusablevaultblocks.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"VaultBlockEntityMixin",
+		"VaultBlockServerMixin",
+		"VaultServerDataMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

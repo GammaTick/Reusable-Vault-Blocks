@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "reusable-vault-blocks",
+	"version": "${version}",
+	"name": "Reusable Vault Blocks",
+	"description": "This mod allows you to reuse the Vault blocks as much times as you want, but also good things take time, so that's why there is also a long cooldown.",
+	"authors": [
+		"JurassicBeast"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/reusable-vault-blocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jurassicbeast.reusablevaultblocks.ReusableVaultBlocks"
+		]
+	},
+	"mixins": [
+		"reusable-vault-blocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
