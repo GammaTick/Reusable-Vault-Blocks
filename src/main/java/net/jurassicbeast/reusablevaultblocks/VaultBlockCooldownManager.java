@@ -77,5 +77,6 @@ public class VaultBlockCooldownManager {
 
     public void copyFrom(VaultBlockCooldownManager data) {
         this.playerCooldowns = new ArrayList<>(data.playerCooldowns);
+        this.cooldownLength = data.getCooldownLength();
     }
 }
