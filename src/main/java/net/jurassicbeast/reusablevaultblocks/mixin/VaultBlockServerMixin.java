@@ -48,6 +48,10 @@ public class VaultBlockServerMixin {
 
     @Inject(method = "tick", at = @At("TAIL"))
     private static void tick(ServerWorld world, BlockPos pos, BlockState state, VaultConfig config, VaultServerData serverData, VaultSharedData sharedData, CallbackInfo info) {
+        if (world.isClient()) {
+            return;
+        }
+
         BlockEntity blockEntity = world.getBlockEntity(pos);
 
         if (blockEntity == null) {
